@@ -1,0 +1,100 @@
+---
+description: 
+globs: *
+alwaysApply: false
+---
+# Rule System Guide - Always Read Before Making Changes
+
+## CRITICAL: Always Read Relevant Rules First
+
+Before making ANY changes to this Sli.dev presentation project, you MUST first read the relevant rules from the comprehensive rule system. This ensures consistency, follows best practices, and prevents breaking existing functionality.
+
+## Available Rules Overview
+
+This project has a comprehensive set of rules that cover all aspects of development:
+
+### Core Project Rules
+- **[slidev-bun-project.mdc](mdc:.cursor/rules/slidev-bun-project.mdc)** - Main project overview and comprehensive guide
+- **[project-structure.mdc](mdc:.cursor/rules/project-structure.mdc)** - File organization and directory structure
+- **[development-commands.mdc](mdc:.cursor/rules/development-commands.mdc)** - Bun package manager and development commands
+
+### Feature-Specific Rules
+- **[slidev-features.mdc](mdc:.cursor/rules/slidev-features.mdc)** - Sli.dev features and slide syntax
+- **[vue-components.mdc](mdc:.cursor/rules/vue-components.mdc)** - Vue component development
+- **[code-snippets.mdc](mdc:.cursor/rules/code-snippets.mdc)** - External code files and embedding
+- **[styling-fonts.mdc](mdc:.cursor/rules/styling-fonts.mdc)** - CSS styling and font configuration
+
+### Deployment & Best Practices
+- **[deployment.mdc](mdc:.cursor/rules/deployment.mdc)** - Netlify and Vercel deployment configuration
+- **[best-practices.mdc](mdc:.cursor/rules/best-practices.mdc)** - Development best practices and troubleshooting
+
+## Rule Selection Workflow
+
+### 1. Identify Task Category
+Determine which category your task falls into:
+- **Project setup/structure** → Read `project-structure.mdc` and `development-commands.mdc`
+- **Slide development** → Read `slidev-features.mdc` 
+- **Component creation** → Read `vue-components.mdc`
+- **Styling changes** → Read `styling-fonts.mdc`
+- **Code snippets** → Read `code-snippets.mdc`
+- **Deployment issues** → Read `deployment.mdc`
+- **Troubleshooting** → Read `best-practices.mdc`
+
+### 2. Always Check the Main Guide
+For any significant changes, always reference `slidev-bun-project.mdc` as it contains the comprehensive overview and may have additional context.
+
+### 3. Multiple Rule Consultation
+For complex tasks involving multiple areas (e.g., creating a styled component with code snippets), read ALL relevant rules before proceeding.
+
+## Key Project Constraints
+
+### Critical Requirements (Always Follow)
+- **Package Manager**: Always use `bun` instead of `npm` or `yarn`
+- **Build Commands**: Use `bun run dev`, `bun run build`, `bun run export`
+- **Component Location**: Vue components go in `components/` directory
+- **Slide Files**: Additional slides go in `pages/` directory
+- **Code Snippets**: External code files go in `snippets/` directory
+- **Assets**: Static files go in `public/` directory
+- **Main Slides**: Primary presentation content is in [slides.md](mdc:slides.md)
+
+### File References
+When referencing project files in rules, use the MDC format:
+```
+[filename.ext](mdc:filename.ext)
+```
+
+## Development Process
+
+### Before Any Changes
+1. **Read** the relevant rule(s) first
+2. **Understand** the project structure and constraints
+3. **Check** existing files and configurations
+4. **Plan** your changes according to the rules
+5. **Implement** following the established patterns
+6. **Test** using the proper bun commands
+
+### Rule Updates
+If you discover that a rule is outdated or needs modification:
+1. Note the discrepancy
+2. Update the specific rule file
+3. Ensure consistency across related rules
+4. Test the updated guidance
+
+## Emergency Rule Consultation
+
+If you're unsure which rule to consult:
+1. Start with `slidev-bun-project.mdc` for general context
+2. Check `best-practices.mdc` for troubleshooting guidance
+3. Consult specific feature rules as needed
+
+## Remember: Rules Prevent Issues
+
+These rules exist to:
+- ✅ Maintain project consistency
+- ✅ Follow Sli.dev best practices  
+- ✅ Ensure proper bun usage
+- ✅ Prevent deployment issues
+- ✅ Speed up development
+- ✅ Avoid common pitfalls
+
+**Always read before you code!**

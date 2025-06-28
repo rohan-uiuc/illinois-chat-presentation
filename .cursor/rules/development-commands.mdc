@@ -1,0 +1,59 @@
+---
+description: Development Commands & Bun Package Manager
+globs: 
+alwaysApply: false
+---
+# Development Commands & Bun Package Manager
+
+## Primary Development Commands
+```bash
+# Start development server
+bun run dev
+# or
+bun dev
+
+# Build for production
+bun run build
+# or  
+bun build
+
+# Export presentation
+bun run export
+# or
+bun export
+```
+
+## Package Management with Bun
+```bash
+# Install dependencies
+bun install
+
+# Add new dependency
+bun add <package-name>
+
+# Add dev dependency  
+bun add -d <package-name>
+
+# Remove dependency
+bun remove <package-name>
+```
+
+## Important Bun Usage Notes
+- **Always use bun instead of npm** for this project
+- Scripts in [package.json](mdc:package.json) are configured for bun
+- Deployment configs ([netlify.toml](mdc:netlify.toml), [vercel.json](mdc:vercel.json)) use `bun run build`
+- Bun provides faster package installation and script execution
+- Use `bun run <script-name>` or `bun <script-name>` for npm scripts
+
+## Development Workflow
+1. Install dependencies: `bun install`
+2. Start dev server: `bun run dev` (keep running manually)
+3. Edit slides in individual files within `slides/` directory
+4. Changes auto-reload in browser with dev server running
+5. Build for production: `bun run build` (only when ready to deploy)
+
+## Development Notes
+- **Dev server runs continuously**: Keep `bun run dev` running manually
+- **No need to restart**: Only suggest running dev commands when explicitly asked
+- **Auto-reload**: Changes to slide files automatically refresh in browser
+- **Focus on content**: Edit individual slide files in `slides/` directory

@@ -1,0 +1,46 @@
+---
+description: Code Snippets & External Files Practices
+globs: 
+alwaysApply: false
+---
+# Code Snippets & External Files
+
+## External Code Import
+- Place code files in `snippets/` directory like [external.ts](mdc:snippets/external.ts)
+- Import with: `<<< @/snippets/external.ts#snippet`
+- Use `#region snippet` and `#endregion snippet` to mark sections
+- Supports TypeScript, JavaScript, and other languages
+
+## Code Snippet Structure
+```typescript
+// #region snippet
+export function emptyArray<T>(length: number) {
+  return Array.from<T>({ length })
+}
+// #endregion snippet
+```
+
+## Code Highlighting Features
+- Language-specific highlighting: ```ts, ```vue, ```bash, ```html
+- Line highlighting: `{1-3|5|7-9}` or `{all|4|6|6-7|9|all}`
+- Filename display: `[filename-example.ts]`
+- TwoSlash integration for TypeScript hover info: `twoslash`
+
+## Code Block Examples
+```typescript [filename-example.ts] {all|4|6|6-7|9|all} twoslash
+// TwoSlash enables TypeScript hover information
+// and errors in markdown code blocks
+import { computed, ref } from 'vue'
+
+const count = ref(0)
+const doubled = computed(() => count.value * 2)
+
+doubled.value = 2
+```
+
+## External File Organization
+1. Create `.ts`, `.js`, `.vue`, or other code files in `snippets/`
+2. Use `#region snippet` and `#endregion snippet` to mark importable sections
+3. Import with `<<< @/snippets/filename.ts#snippet`
+4. Supports multiple regions per file with different names
+5. Keep snippets focused and self-contained

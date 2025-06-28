@@ -1,0 +1,74 @@
+---
+description: Best Practices & Troubleshooting for Slidev Presentations
+globs: 
+alwaysApply: false
+---
+# Best Practices & Troubleshooting
+
+## Development Best Practices
+
+### Project Setup
+1. Always use `bun install` instead of `npm install`
+2. Verify all scripts work with bun: `bun run dev`, `bun run build`
+3. Update deployment configs to use bun commands
+4. Test builds locally before deploying
+
+### Slide Development
+1. Create individual slide files in `slides/` directory with numbered prefixes
+2. Use meaningful slide titles and organize with levels
+3. Add presenter notes in comment blocks at end of slides
+4. Use transitions thoughtfully: `slide-left`, `fade-out`, `slide-up`
+5. Leverage layouts for consistent design
+6. Keep each slide file focused on a single topic or section
+7. Import slides in main [slides.md](mdc:slides.md) using `src:` frontmatter
+
+### Component Development
+1. Create reusable components in `components/` directory
+2. Use TypeScript with `<script setup lang="ts">`
+3. Follow Vue 3 Composition API patterns
+4. Test components in development mode
+5. Keep components focused and reusable
+
+## Common Issues & Solutions
+
+### Slides Not Updating
+- **Problem**: Changes not reflected in browser
+- **Solution**: Check if dev server is still running; restart only if needed
+- **Prevention**: Check for syntax errors in slide files in `slides/` directory
+- **Note**: Dev server should be kept running manually for auto-reload
+
+### Components Not Working
+- **Problem**: Vue components not rendering
+- **Solution**: Check Vue syntax and imports in component files
+- **Prevention**: Use TypeScript and proper component structure
+
+### Fonts Not Loading
+- **Problem**: Montserrat fonts not displaying
+- **Solution**: Verify [style.css](mdc:style.css) import in frontmatter
+- **Check**: Ensure `css: style.css` is in slide frontmatter
+
+### Build Failures
+- **Problem**: Build process fails
+- **Solution**: Ensure all dependencies installed with `bun install`
+- **Debug**: Check for syntax errors in slides and components
+
+## Performance Optimization
+
+### Asset Optimization
+- Minimize large images in `public/` directory
+- Use appropriate image formats (WebP, optimized PNG/JPG)
+- Consider CDN URLs for external resources
+- Optimize fonts and CSS imports
+
+### Build Optimization
+- Use code splitting for complex components
+- Test export functionality before final presentation
+- Remove unused dependencies
+- Optimize external resources and CDN usage
+
+## Presentation Best Practices
+1. Test presentation on target display/projector
+2. Have backup export (PDF) ready
+3. Test all interactive components before presenting
+4. Use presenter mode for notes and navigation
+5. Prepare for different screen resolutions

@@ -1,0 +1,131 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+/* CSS Custom Properties for Montserrat fonts and Illinois Chat Theme System */
+:root {
+  --font-montserratHeading: 'Montserrat', sans-serif;
+  --font-montserratParagraph: 'Montserrat', sans-serif;
+  
+  /* Illinois Colors */
+  --illinois-orange: #ff6b35;
+  --illinois-blue: #13294b;
+  --illinois-light-blue: #0ea5e9;
+  
+  /* Default Dark Theme */
+  --theme-bg-primary: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  --theme-bg-secondary: #2d2d2d;
+  --theme-text-primary: #ffffff;
+  --theme-text-secondary: #d1d5db;
+  --theme-text-muted: #9ca3af;
+  --theme-accent-orange: #ff6b35;
+  --theme-accent-blue: #13294b;
+  --theme-border: rgba(255, 107, 53, 0.3);
+}
+
+/* Light Theme Variables */
+:root.theme-light {
+  --theme-bg-primary: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  --theme-bg-secondary: #f8fafc;
+  --theme-text-primary: #13294b;
+  --theme-text-secondary: #334155;
+  --theme-text-muted: #64748b;
+  --theme-accent-orange: #ff6b35;
+  --theme-accent-blue: #13294b;
+  --theme-border: rgba(19, 41, 75, 0.2);
+}
+
+/* Apply Montserrat to headings with 700 weight */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserratHeading);
+  font-weight: 700;
+  color: var(--theme-text-primary);
+  transition: color 0.3s ease-in-out;
+}
+
+/* Apply Montserrat to paragraphs and body text with 500 weight */
+p, body, .slidev-layout {
+  font-family: var(--font-montserratParagraph);
+  font-weight: 500;
+  color: var(--theme-text-secondary);
+  transition: color 0.3s ease-in-out;
+}
+
+/* Specific classes for manual application */
+.montserrat-heading {
+  font-family: var(--font-montserratHeading);
+  font-weight: 700;
+}
+
+.montserrat-paragraph {
+  font-family: var(--font-montserratParagraph);
+  font-weight: 500;
+}
+
+/* Override any existing font families with theme support */
+.slidev-page {
+  font-family: var(--font-montserratParagraph);
+  font-weight: 500;
+  background: var(--theme-bg-primary);
+  color: var(--theme-text-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Global theme-aware components */
+.slidev-layout {
+  background: var(--theme-bg-primary);
+  color: var(--theme-text-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Code blocks with Illinois theme */
+.slidev-code {
+  background: var(--theme-bg-secondary) !important;
+  border: 1px solid var(--theme-border);
+  color: var(--theme-text-primary);
+}
+
+/* Buttons and interactive elements */
+button, .slidev-icon-btn {
+  color: var(--theme-text-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover, .slidev-icon-btn:hover {
+  color: var(--theme-accent-orange);
+}
+
+/* Navigation elements */
+.slidev-nav {
+  background: var(--theme-bg-secondary);
+  border-color: var(--theme-border);
+}
+
+/* Custom Illinois theme utilities */
+.illinois-orange {
+  color: var(--illinois-orange);
+}
+
+.illinois-blue {
+  color: var(--illinois-blue);
+}
+
+.bg-illinois-orange {
+  background-color: var(--illinois-orange);
+}
+
+.bg-illinois-blue {
+  background-color: var(--illinois-blue);
+}
+
+.border-illinois-orange {
+  border-color: var(--illinois-orange);
+}
+
+.border-illinois-blue {
+  border-color: var(--illinois-blue);
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+} 

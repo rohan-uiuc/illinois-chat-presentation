@@ -1,0 +1,79 @@
+---
+description: Sli.dev Features & Slide Syntax
+globs: 
+alwaysApply: false
+---
+# Sli.dev Features & Slide Syntax
+
+## Slide Configuration
+- Slides use frontmatter YAML configuration at the top of [slides.md](mdc:slides.md)
+- Key settings: `theme`, `css`, `background`, `title`, `info`, `transition`, `mdc`
+- Current theme: `seriph` with custom CSS from [style.css](mdc:style.css)
+
+## Slide Syntax
+- Slides are separated by `---`
+- Each slide can have its own frontmatter (transition, layout, level, etc.)
+- Supports MDC (Markdown Components) syntax
+- Vue components can be embedded directly in slides
+
+## Available Layouts & Themes
+- Uses `theme: seriph` by default
+- Also has `@slidev/theme-default` available
+- Custom layouts: `two-cols`, `image-right`, `center`, `quote`
+- Layout classes can be applied with `layoutClass`
+
+## Interactive Features
+- Vue components work directly in slides
+- Click animations: `v-click`, `v-after`
+- Code highlighting with line numbers: `{all|4|6|6-7|9|all}`
+- TwoSlash for TypeScript hover information in code blocks
+
+## Slide Transitions
+- Available transitions: `slide-left`, `fade-out`, `slide-up`, `fade`
+- Set global transition in frontmatter: `transition: slide-left`
+- Override per slide: `transition: fade-out`
+
+## Multi-File Slide Organization
+- Create individual slide files in `slides/` directory
+- Use numbered prefixes: `01-intro.md`, `02-agenda.md`, `03-features.md`
+- Import slides in [slides.md](mdc:slides.md) using `src:` frontmatter
+- Each slide file contains one or more related slides
+- Maintain consistent frontmatter across files
+
+## Slide Import Structure
+Main [slides.md](mdc:slides.md) should contain:
+```markdown
+---
+theme: seriph
+css: style.css
+title: My Presentation
+---
+
+---
+src: ./slides/01-intro.md
+---
+
+---
+src: ./slides/02-agenda.md
+---
+
+---
+src: ./slides/03-features.md
+---
+```
+
+## Individual Slide File Structure
+Each slide file (e.g., `slides/01-intro.md`) contains:
+```markdown
+# Slide Title
+
+Content here...
+
+---
+layout: two-cols
+---
+
+# Another Slide
+
+More content...
+```

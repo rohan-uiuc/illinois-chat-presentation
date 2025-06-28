@@ -1,0 +1,52 @@
+---
+description: Project Structure & File Organization
+globs: 
+alwaysApply: false
+---
+# Project Structure & File Organization
+
+## Core Project Files
+- [slides.md](mdc:slides.md) - Main presentation entry point with imports to slide files
+- [package.json](mdc:package.json) - Project dependencies and scripts using bun
+- [style.css](mdc:style.css) - Custom CSS with Montserrat font imports
+- [netlify.toml](mdc:netlify.toml) - Netlify deployment configuration  
+- [vercel.json](mdc:vercel.json) - Vercel deployment configuration
+
+## Directory Structure
+- `slides/` - Individual numbered slide files (01-intro.md, 02-features.md, etc.)
+- `components/` - Vue.js components for slides (e.g., [Counter.vue](mdc:components/Counter.vue))
+- `pages/` - Additional slide files that can be imported ([imported-slides.md](mdc:pages/imported-slides.md))
+- `snippets/` - External code snippets for embedding ([external.ts](mdc:snippets/external.ts))
+- `public/` - Static assets including images like [logo_illinois.png](mdc:public/images/logo_illinois.png)
+
+## Slide Organization Best Practices
+1. Create `slides/` directory for individual slide files
+2. Use numbered prefixes: `01-intro.md`, `02-agenda.md`, `03-features.md`
+3. Import slides in [slides.md](mdc:slides.md) using `src:` frontmatter
+4. Keep each slide file focused on a single topic
+5. Store reusable components in `components/` directory
+6. Place external code examples in `snippets/` directory
+7. Store all static assets (images, fonts, etc.) in `public/` directory
+
+## Slide File Naming Convention
+- Use two-digit prefixes: `01-`, `02-`, `03-`, etc.
+- Include descriptive names: `01-intro.md`, `02-features.md`, `03-demo.md`
+- Keep names short but meaningful
+- Group related slides with similar prefixes: `05a-setup.md`, `05b-config.md`
+
+## Asset Management
+- Reference images with absolute paths: `/images/filename.png`
+- Optimize images for web presentation before adding to `public/`
+- Use consistent naming conventions for assets
+- Consider CDN URLs for external resources
+
+## Example Structure
+```
+slides/
+├── 01-intro.md
+├── 02-agenda.md
+├── 03-features.md
+├── 04-demo.md
+├── 05-conclusion.md
+└── 06-questions.md
+```

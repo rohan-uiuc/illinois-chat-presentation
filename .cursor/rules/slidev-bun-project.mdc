@@ -1,0 +1,191 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Sli.dev Presentation Project with Bun
+
+This is a Sli.dev (Slidev) presentation project using bun as the package manager and runtime.
+
+## Project Structure
+
+### Core Files
+- [slides.md](mdc:slides.md) - Main presentation file with frontmatter configuration
+- [package.json](mdc:package.json) - Project dependencies and scripts using bun
+- [style.css](mdc:style.css) - Custom CSS with Montserrat font imports
+- [netlify.toml](mdc:netlify.toml) - Netlify deployment configuration
+- [vercel.json](mdc:vercel.json) - Vercel deployment configuration
+
+### Directory Structure
+- `components/` - Vue.js components for slides (e.g., [Counter.vue](mdc:components/Counter.vue))
+- `pages/` - Additional slide files that can be imported ([imported-slides.md](mdc:pages/imported-slides.md))
+- `snippets/` - External code snippets for embedding ([external.ts](mdc:snippets/external.ts))
+- `public/` - Static assets including images like [logo_illinois.png](mdc:public/images/logo_illinois.png)
+
+## Development Commands (using bun)
+
+### Primary Commands
+```bash
+# Start development server
+bun run dev
+# or
+bun dev
+
+# Build for production
+bun run build
+# or  
+bun build
+
+# Export presentation
+bun run export
+# or
+bun export
+```
+
+### Package Management
+```bash
+# Install dependencies
+bun install
+
+# Add new dependency
+bun add <package-name>
+
+# Add dev dependency  
+bun add -d <package-name>
+
+# Remove dependency
+bun remove <package-name>
+```
+
+## Sli.dev Features & Usage
+
+### Slide Configuration
+- Slides use frontmatter YAML configuration at the top of [slides.md](mdc:slides.md)
+- Key settings: `theme`, `css`, `background`, `title`, `info`, `transition`, `mdc`
+- Current theme: `seriph` with custom CSS from [style.css](mdc:style.css)
+
+### Slide Syntax
+- Slides are separated by `---`
+- Each slide can have its own frontmatter (transition, layout, level, etc.)
+- Supports MDC (Markdown Components) syntax
+- Vue components can be embedded directly in slides
+
+### Layouts & Themes
+- Uses `theme: seriph` by default
+- Also has `@slidev/theme-default` available
+- Custom layouts: `two-cols`, `image-right`, etc.
+- Layout classes can be applied with `layoutClass`
+
+### Interactive Features
+- Vue components work directly in slides
+- Click animations: `v-click`, `v-after`
+- Code highlighting with line numbers and highlighting: `{all|4|6|6-7|9|all}`
+- TwoSlash for TypeScript hover information in code blocks
+
+## Custom Components
+
+### Creating Components
+- Place Vue components in `components/` directory
+- Components automatically available in all slides
+- Example: [Counter.vue](mdc:components/Counter.vue) demonstrates reactive counter
+- Use Composition API with `<script setup lang="ts">`
+
+### Component Usage in Slides
+```vue
+<Counter :count="10" />
+```
+
+## Custom Styling
+
+### Font Configuration
+- [style.css](mdc:style.css) imports Montserrat font from Google Fonts
+- CSS custom properties: `--font-montserratHeading`, `--font-montserratParagraph`
+- Automatic application to headings (700 weight) and body text (500 weight)
+- Manual classes: `.montserrat-heading`, `.montserrat-paragraph`
+
+### Styling Best Practices
+- Use UnoCSS/Tailwind classes for utility styling
+- Scoped styles with `<style>` tags in individual slides
+- Global styles in [style.css](mdc:style.css)
+- Override Slidev defaults with `.slidev-page`, `.slidev-layout`
+
+## Code Snippets & External Files
+
+### External Code Import
+- Place code files in `snippets/` directory like [external.ts](mdc:snippets/external.ts)
+- Import with: `<<< @/snippets/external.ts#snippet`
+- Use `#region snippet` and `#endregion snippet` to mark sections
+- Supports TypeScript, JavaScript, and other languages
+
+### Code Highlighting
+- Language-specific highlighting: ```ts, ```vue, ```bash
+- Line highlighting: `{1-3|5|7-9}`
+- Filename display: `[filename-example.ts]`
+- TwoSlash integration for TypeScript hover info
+
+## Multi-File Presentations
+
+### Importing Additional Slides
+- Create slide files in `pages/` directory
+- Import with frontmatter: `src: ./pages/imported-slides.md`
+- Example in [imported-slides.md](mdc:pages/imported-slides.md)
+- Maintain consistent frontmatter across files
+
+## Deployment
+
+### Netlify Deployment
+- Configured in [netlify.toml](mdc:netlify.toml)
+- **Important**: Update build command from `npm run build` to `bun run build`
+- Output directory: `dist`
+- SPA redirects configured for proper routing
+
+### Vercel Deployment  
+- Configured in [vercel.json](mdc:vercel.json)
+- **Important**: Update build command from `npm run build` to `bun run build`
+- Output directory: `dist`
+- SPA rewrites configured
+
+### Build Output
+- Production build creates static files in `dist/` directory
+- Includes HTML, CSS, JS, and assets
+- Can be deployed to any static hosting service
+
+## Development Best Practices
+
+### Project Setup
+1. Always use `bun install` instead of `npm install`
+2. Verify all scripts work with bun: `bun run dev`, `bun run build`
+3. Update deployment configs to use bun commands
+4. Test builds locally before deploying
+
+### Slide Development
+1. Use meaningful slide titles and organize with levels
+2. Add presenter notes in comment blocks at end of slides
+3. Use transitions thoughtfully: `slide-left`, `fade-out`, `slide-up`
+4. Leverage layouts for consistent design
+
+### Component Development
+1. Create reusable components in `components/` directory
+2. Use TypeScript with `<script setup lang="ts">`
+3. Follow Vue 3 Composition API patterns
+4. Test components in development mode
+
+### Asset Management
+1. Place images and static files in `public/` directory
+2. Reference with absolute paths: `/images/logo.png`
+3. Optimize images for web presentation
+4. Consider CDN URLs for external assets
+
+## Troubleshooting
+
+### Common Issues
+- If slides don't update: restart dev server with `bun run dev`
+- If components don't work: check Vue syntax and imports
+- If fonts don't load: verify [style.css](mdc:style.css) import in frontmatter
+- If build fails: ensure all dependencies installed with `bun install`
+
+### Performance Tips
+- Minimize large images in `public/` directory
+- Use code splitting for complex components
+- Optimize external CDN resources
+- Test export functionality before final presentation

@@ -1,0 +1,50 @@
+---
+description: Deployment Configuration
+globs: 
+alwaysApply: false
+---
+# Deployment Configuration
+
+## Netlify Deployment
+- Configured in [netlify.toml](mdc:netlify.toml)
+- Build command: `bun run build` (updated from npm)
+- Output directory: `dist`
+- SPA redirects configured for proper routing
+- Node version: 20
+
+## Vercel Deployment  
+- Configured in [vercel.json](mdc:vercel.json)
+- Build command: `bun run build` (updated from npm)
+- Output directory: `dist`
+- SPA rewrites configured for single-page app routing
+
+## Build Process
+- Production build creates static files in `dist/` directory
+- Includes HTML, CSS, JS, and assets
+- Can be deployed to any static hosting service
+- Build command: `bun run build`
+
+## Deployment Checklist
+1. Ensure all dependencies are installed: `bun install`
+2. Test build locally: `bun run build`
+3. Verify build output in `dist/` directory
+4. Check that all assets are properly referenced
+5. Test the built site locally before deploying
+6. Ensure deployment configs use `bun run build` command
+
+## Static Hosting Options
+- **Netlify**: Configured with [netlify.toml](mdc:netlify.toml)
+- **Vercel**: Configured with [vercel.json](mdc:vercel.json)
+- **GitHub Pages**: Can deploy from `dist/` folder
+- **Any static hosting**: Upload contents of `dist/` folder
+
+## Build Output Structure
+```
+dist/
+├── index.html
+├── assets/
+│   ├── *.css
+│   ├── *.js
+│   └── *.png/jpg/svg
+└── ...
+```

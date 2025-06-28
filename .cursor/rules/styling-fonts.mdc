@@ -1,0 +1,53 @@
+---
+description: Styling & Font Configuration
+globs: 
+alwaysApply: false
+---
+# Styling & Font Configuration
+
+## Montserrat Font Configuration
+- [style.css](mdc:style.css) imports Montserrat font from Google Fonts
+- CSS custom properties: `--font-montserratHeading`, `--font-montserratParagraph`
+- Automatic application to headings (700 weight) and body text (500 weight)
+- Manual classes: `.montserrat-heading`, `.montserrat-paragraph`
+
+## Font Usage
+```css
+/* Automatic application */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserratHeading);
+  font-weight: 700;
+}
+
+p, body, .slidev-layout {
+  font-family: var(--font-montserratParagraph);
+  font-weight: 500;
+}
+```
+
+## Styling Best Practices
+- Use UnoCSS/Tailwind classes for utility styling
+- Scoped styles with `<style>` tags in individual slides
+- Global styles in [style.css](mdc:style.css)
+- Override Slidev defaults with `.slidev-page`, `.slidev-layout`
+
+## Slide-Specific Styling
+```html
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+```
+
+## Font Classes Available
+- `.montserrat-heading` - Montserrat 700 weight for headings
+- `.montserrat-paragraph` - Montserrat 500 weight for body text
+- Applied automatically to standard HTML elements
+- Custom CSS properties for consistent theming
