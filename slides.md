@@ -68,6 +68,10 @@ src: ./slides/04f-tool-page.md
 ---
 
 ---
+src: ./slides/09-use-cases-overview.md
+---
+
+---
 src: ./slides/10-classroom-use-cases.md
 ---
 

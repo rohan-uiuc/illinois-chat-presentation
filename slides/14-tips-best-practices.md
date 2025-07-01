@@ -1,6 +1,6 @@
 ---
 layout: two-cols
-transition: slide-up
+transition: slide-right
 ---
 
 <ThemeToggle />
