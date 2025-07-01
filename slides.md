@@ -52,6 +52,10 @@ src: ./slides/04c-analytics-dashboard.md
 ---
 
 ---
+src: ./slides/04g-access-control.md
+---
+
+---
 src: ./slides/04d-prompting-page.md
 ---
 

@@ -7,7 +7,7 @@ transition: slide-up
 
 # <span class="slide-title">Features</span>
 
-<div class="text-center max-w-6xl mx-auto">
+<div class="max-w-6xl mx-auto">
 
 ## <span class="montserrat-heading">Comprehensive platform designed for</span> <span class="illinois-orange">**education**</span>
 
@@ -75,7 +75,7 @@ transition: slide-up
 
 </div>
 
-<div class="mt-12 text-lg">
+<div class="mt-12 text-lg text-center">
 <span class="call-to-action">Let's explore each feature in detail ↓</span>
 </div>
 

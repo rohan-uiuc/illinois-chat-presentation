@@ -14,59 +14,59 @@ transition: slide-up
   
   <!-- File Upload & Processing -->
   <div class="mb-4">
-    <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
       <span class="text-blue-500">📁</span> File Support & Processing
-    </h3>
-    <ul class="space-y-2 text-xs">
+    </h4>
+    <ul class="space-y-2 text-sm">
       <li class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="text-gray-700 dark:text-gray-300">PDF, PowerPoint, CSV files</span>
+        <span class="montserrat-paragraph">PDF, PowerPoint, CSV files</span>
       </li>
       <li class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="text-gray-700 dark:text-gray-300">Bulk upload, auto-indexing, OCR support</span>
+        <span class="montserrat-paragraph">Bulk upload, auto-indexing, OCR support</span>
       </li>
     </ul>
   </div>
 
   <!-- Integrations -->
   <div class="mb-4">
-    <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
       <span class="text-green-500">🔗</span> Platform Integrations
-    </h3>
-    <ul class="space-y-2 text-xs">
+    </h4>
+    <ul class="space-y-2 text-sm">
       <li class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="text-gray-700 dark:text-gray-300">Canvas LMS</span>
+        <span class="montserrat-paragraph">Canvas LMS</span>
       </li>
       <li class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="text-gray-700 dark:text-gray-300">Coursera</span>
+        <span class="montserrat-paragraph">Coursera</span>
       </li>
       <li class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="text-gray-700 dark:text-gray-300">Webscraping</span>
+        <span class="montserrat-paragraph">Webscraping</span>
       </li>
       <li class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="text-gray-700 dark:text-gray-300">MIT OpenCourseWare</span>
+        <span class="montserrat-paragraph">MIT OpenCourseWare</span>
       </li>
     </ul>
   </div>
 
   <!-- Document Groups & Access -->
   <div>
-    <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
       <span class="text-purple-500">📂</span> Document Groups & Access
-    </h3>
-    <ul class="space-y-2 text-xs">
+    </h4>
+    <ul class="space-y-2 text-sm">
       <li class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="text-gray-700 dark:text-gray-300">Course-based groups, smart chat filtering</span>
+        <span class="montserrat-paragraph">Course-based groups, smart chat filtering</span>
       </li>
       <li class="flex items-center gap-2">
         <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="text-gray-700 dark:text-gray-300">Enable/disable groups, permission controls</span>
+        <span class="montserrat-paragraph">Enable/disable groups, permission controls</span>
       </li>
     </ul>
   </div>

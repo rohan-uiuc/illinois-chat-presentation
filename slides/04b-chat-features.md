@@ -14,24 +14,24 @@ transition: slide-up
   
   <!-- Grounded Responses -->
   <div class="mb-4">
-    <h3 class="montserrat-heading text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
       <span class="text-green-500">🎯</span> Grounded Responses
-    </h3>
+    </h4>
     <ul class="space-y-2 text-sm">
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Source-backed answers with clickable citations</span>
       </li>
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Semantic search and retrieval</span>
       </li>
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Filter by document groups</span>
       </li>
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Context-aware suggestions</span>
       </li>
     </ul>
@@ -39,16 +39,16 @@ transition: slide-up
 
   <!-- Model Selection -->
   <div class="mb-4">
-    <h3 class="montserrat-heading text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
       <span class="text-purple-500">🤖</span> Model Selection
-    </h3>
+    </h4>
     <ul class="space-y-2 text-sm">
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Commercial models (OpenAI, Anthropic, Gemini, ...)</span>
       </li>
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Free Open Source models (Qwen, DeepSeek, ...)</span>
       </li>
     </ul>
@@ -56,16 +56,16 @@ transition: slide-up
 
   <!-- Multi-modal Interface -->
   <div class="mb-4">
-    <h3 class="montserrat-heading text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
       <span class="text-blue-500">🖱️</span> Multi-modal Interface
-    </h3>
+    </h4>
     <ul class="space-y-2 text-sm">
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Drag images directly into chat</span>
       </li>
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Multi-turn conversations</span>
       </li>
     </ul>

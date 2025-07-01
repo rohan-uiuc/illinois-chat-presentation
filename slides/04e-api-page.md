@@ -8,84 +8,69 @@ transition: slide-up
 # <span class="slide-title">🔌 API Integration</span>
 
 <div class="pr-6">
-  <h2 class="montserrat-heading text-2xl font-bold text-blue-800 dark:text-blue-100 mb-6">
+  <h4 class="montserrat-paragraph text-2xl font-bold text-blue-800 dark:text-blue-100 mb-4">
     Seamless Platform Integration
-  </h2>
-  
-  <!-- API Features -->
-  <div class="mb-6">
-    <h3 class="montserrat-heading text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
-      <span class="text-blue-500">🚀</span> API Capabilities
-    </h3>
+  </h4>
+
+  <!-- Developer Tools -->
+  <div>
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
+      <span class="text-purple-500">🛠️</span> Developer Tools
+    </h4>
     <ul class="space-y-2 text-sm">
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+        <span class="montserrat-paragraph">Interactive API Request Builder</span>
+      </li>
+      <li class="flex items-center gap-2">
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+        <span class="montserrat-paragraph">API Key Management</span>
+      </li>
+      <li class="flex items-center gap-2">
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+        <span class="montserrat-paragraph">Comprehensive documentation</span>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- API Features -->
+  <div class="mb-4">
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
+      <span class="text-blue-500">🚀</span> API Capabilities
+    </h4>
+    <ul class="space-y-2 text-sm">
+      <li class="flex items-center gap-2">
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">RESTful API endpoints</span>
       </li>
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Real-time WebSocket support</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">OAuth 2.0 authentication</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Rate limiting & monitoring</span>
+      </li>
+      <li class="flex items-center gap-2">
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+        <span class="montserrat-paragraph">Flags for retrieval only or final LLM response</span>
       </li>
     </ul>
   </div>
 
   <!-- Platform Integration -->
-  <div class="mb-6">
-    <h3 class="montserrat-heading text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
+  <div class="mb-4">
+    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
       <span class="text-green-500">🔗</span> Platform Integration
-    </h3>
+    </h4>
     <ul class="space-y-2 text-sm">
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
         <span class="montserrat-paragraph">Embed in existing platforms</span>
       </li>
       <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">White-label solutions</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Custom UI components</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">SSO integration</span>
+        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+        <span class="montserrat-paragraph">Copy/Paste requests in cURL, Python, or JavaScript</span>
       </li>
     </ul>
   </div>
 
-  <!-- Developer Tools -->
-  <div>
-    <h3 class="montserrat-heading text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3 flex items-center gap-2">
-      <span class="text-purple-500">🛠️</span> Developer Tools
-    </h3>
-    <ul class="space-y-2 text-sm">
-      <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Comprehensive documentation</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">SDK libraries (Python, JS)</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Sandbox environment</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">24/7 developer support</span>
-      </li>
-    </ul>
-  </div>
 </div>
 
 ::right::
@@ -93,7 +78,7 @@ transition: slide-up
 <!-- Screenshot -->
 <div class="pl-6">
   <div class="h-full flex items-center justify-center">
-    <img src="/images/banner_icons.png" alt="API Integration Dashboard" class="w-full max-w-lg rounded-lg shadow-lg" />
+    <img src="/images/api_request_builder.png" alt="API Integration Dashboard" class="w-full max-w-lg rounded-lg shadow-lg" />
   </div>
 </div>
 
