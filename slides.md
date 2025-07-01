@@ -82,3 +82,7 @@ src: ./slides/12-getting-started.md
 ---
 src: ./slides/14-qa.md
 ---
+
+---
+src: ./slides/15-survey.md
+---
