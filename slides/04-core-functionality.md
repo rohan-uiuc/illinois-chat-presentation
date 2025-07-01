@@ -76,7 +76,7 @@ transition: slide-up
 </div>
 
 <div class="mt-12 text-lg">
-<span class="call-to-action">Let's explore each feature in detail →</span>
+<span class="call-to-action">Let's explore each feature in detail ↓</span>
 </div>
 
 </div>

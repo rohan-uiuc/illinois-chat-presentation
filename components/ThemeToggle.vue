@@ -37,100 +37,34 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { nextTick, onMounted, onUnmounted, ref } from 'vue'
+<script setup>
+import { ref, onMounted } from 'vue'
 
-const isDark = ref(true) // Default to dark theme
+const isDark = ref(true)
 
-// Simplified theme state management
-const getGlobalThemeState = () => {
-  // Check localStorage first
-  const savedTheme = localStorage.getItem('illinois-chat-theme')
-  if (savedTheme) {
-    return savedTheme === 'dark'
-  }
-  
-  // Check actual DOM state as fallback
-  const root = document.documentElement
-  return root.classList.contains('dark')
-}
-
-const syncThemeState = () => {
-  const globalState = getGlobalThemeState()
-  if (isDark.value !== globalState) {
-    isDark.value = globalState
-  }
-}
-
-const toggleTheme = () => {
+// Function to toggle between light and dark themes
+function toggleTheme() {
   isDark.value = !isDark.value
-  updateTheme()
-  // Broadcast theme change to other instances
-  window.dispatchEvent(new CustomEvent('theme-changed', { 
-    detail: { isDark: isDark.value } 
-  }))
-}
-
-const updateTheme = () => {
-  const root = document.documentElement
   
   if (isDark.value) {
-    // Add standard dark class - CSS handles the rest
-    root.classList.add('dark')
+    document.documentElement.classList.add('dark')
+    localStorage.setItem('illinois-chat-theme', 'dark')
   } else {
-    // Remove dark class - CSS handles the rest
-    root.classList.remove('dark')
-  }
-  
-  // Store preference
-  localStorage.setItem('illinois-chat-theme', isDark.value ? 'dark' : 'light')
-}
-
-// Listen for theme changes from other instances
-const handleThemeChange = (event: CustomEvent) => {
-  if (event.detail && typeof event.detail.isDark === 'boolean') {
-    isDark.value = event.detail.isDark
+    document.documentElement.classList.remove('dark')
+    localStorage.setItem('illinois-chat-theme', 'light')
   }
 }
 
-onMounted(async () => {
-  // Wait for DOM to be ready
-  await nextTick()
+// Initialize theme from localStorage on component mount
+onMounted(() => {
+  const savedTheme = localStorage.getItem('illinois-chat-theme') || 'dark'
+  isDark.value = savedTheme === 'dark'
   
-  // Sync with global theme state
-  syncThemeState()
-  
-  // Initialize dark class on first load if needed
-  const root = document.documentElement
-  if (isDark.value && !root.classList.contains('dark')) {
-    root.classList.add('dark')
-  } else if (!isDark.value && root.classList.contains('dark')) {
-    root.classList.remove('dark')
+  if (isDark.value) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
   }
-  
-  updateTheme()
-  
-  // Listen for theme changes from other instances
-  window.addEventListener('theme-changed', handleThemeChange as EventListener)
-  
-  // Sync state when component becomes visible (slide navigation)
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        syncThemeState()
-      }
-    })
-  })
-  
-  const container = document.querySelector('.theme-toggle-container')
-  if (container) {
-    observer.observe(container)
-  }
-})
-
-onUnmounted(() => {
-  // Clean up event listener
-  window.removeEventListener('theme-changed', handleThemeChange as EventListener)
 })
 </script>
 
@@ -191,4 +125,5 @@ onUnmounted(() => {
     @apply w-5 h-5;
   }
 }
-</style> 
+</style>
+ 
