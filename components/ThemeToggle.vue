@@ -38,58 +38,100 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
+import { nextTick, onMounted, onUnmounted, ref } from 'vue'
 
 const isDark = ref(true) // Default to dark theme
+
+// Simplified theme state management
+const getGlobalThemeState = () => {
+  // Check localStorage first
+  const savedTheme = localStorage.getItem('illinois-chat-theme')
+  if (savedTheme) {
+    return savedTheme === 'dark'
+  }
+  
+  // Check actual DOM state as fallback
+  const root = document.documentElement
+  return root.classList.contains('dark')
+}
+
+const syncThemeState = () => {
+  const globalState = getGlobalThemeState()
+  if (isDark.value !== globalState) {
+    isDark.value = globalState
+  }
+}
 
 const toggleTheme = () => {
   isDark.value = !isDark.value
   updateTheme()
+  // Broadcast theme change to other instances
+  window.dispatchEvent(new CustomEvent('theme-changed', { 
+    detail: { isDark: isDark.value } 
+  }))
 }
 
 const updateTheme = () => {
   const root = document.documentElement
   
   if (isDark.value) {
-    // Dark theme with Illinois colors
-    root.style.setProperty('--theme-bg-primary', 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)')
-    root.style.setProperty('--theme-bg-secondary', '#2d2d2d')
-    root.style.setProperty('--theme-text-primary', '#ffffff')
-    root.style.setProperty('--theme-text-secondary', '#d1d5db')
-    root.style.setProperty('--theme-text-muted', '#9ca3af')
-    root.style.setProperty('--theme-accent-orange', '#ff6b35')
-    root.style.setProperty('--theme-accent-blue', '#13294b')
-    root.style.setProperty('--theme-border', 'rgba(255, 107, 53, 0.3)')
-    root.classList.add('theme-dark')
-    root.classList.remove('theme-light')
+    // Add standard dark class - CSS handles the rest
+    root.classList.add('dark')
   } else {
-    // Light theme with Illinois colors
-    root.style.setProperty('--theme-bg-primary', 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)')
-    root.style.setProperty('--theme-bg-secondary', '#f8fafc')
-    root.style.setProperty('--theme-text-primary', '#13294b')
-    root.style.setProperty('--theme-text-secondary', '#334155')
-    root.style.setProperty('--theme-text-muted', '#64748b')
-    root.style.setProperty('--theme-accent-orange', '#ff6b35')
-    root.style.setProperty('--theme-accent-blue', '#13294b')
-    root.style.setProperty('--theme-border', 'rgba(19, 41, 75, 0.2)')
-    root.classList.add('theme-light')
-    root.classList.remove('theme-dark')
+    // Remove dark class - CSS handles the rest
+    root.classList.remove('dark')
   }
   
   // Store preference
   localStorage.setItem('illinois-chat-theme', isDark.value ? 'dark' : 'light')
 }
 
-onMounted(() => {
-  // Load saved theme preference
-  const savedTheme = localStorage.getItem('illinois-chat-theme')
-  if (savedTheme) {
-    isDark.value = savedTheme === 'dark'
+// Listen for theme changes from other instances
+const handleThemeChange = (event: CustomEvent) => {
+  if (event.detail && typeof event.detail.isDark === 'boolean') {
+    isDark.value = event.detail.isDark
   }
+}
+
+onMounted(async () => {
+  // Wait for DOM to be ready
+  await nextTick()
+  
+  // Sync with global theme state
+  syncThemeState()
+  
+  // Initialize dark class on first load if needed
+  const root = document.documentElement
+  if (isDark.value && !root.classList.contains('dark')) {
+    root.classList.add('dark')
+  } else if (!isDark.value && root.classList.contains('dark')) {
+    root.classList.remove('dark')
+  }
+  
   updateTheme()
+  
+  // Listen for theme changes from other instances
+  window.addEventListener('theme-changed', handleThemeChange as EventListener)
+  
+  // Sync state when component becomes visible (slide navigation)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        syncThemeState()
+      }
+    })
+  })
+  
+  const container = document.querySelector('.theme-toggle-container')
+  if (container) {
+    observer.observe(container)
+  }
 })
 
-watch(isDark, updateTheme)
+onUnmounted(() => {
+  // Clean up event listener
+  window.removeEventListener('theme-changed', handleThemeChange as EventListener)
+})
 </script>
 
 <style scoped>

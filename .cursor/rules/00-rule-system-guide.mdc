@@ -1,7 +1,7 @@
 ---
 description: 
-globs: *
-alwaysApply: false
+globs: 
+alwaysApply: true
 ---
 # Rule System Guide - Always Read Before Making Changes
 

@@ -1,0 +1,35 @@
+---
+# Theme configuration
+theme: seriph
+# Import custom CSS for Montserrat fonts
+css: style.css
+# Background image
+background: https://cover.sli.dev
+# Presentation metadata
+title: My Presentation Title
+info: |
+  ## Presentation Description
+  Brief description of your presentation content.
+  
+  Learn more at [Sli.dev](https://sli.dev)
+# Global settings
+class: text-center
+drawings:
+  persist: false
+transition: slide-left
+mdc: true
+---
+
+<!-- Import individual slide files -->
+
+---
+src: ./slides/01-intro.md
+---
+
+---
+src: ./slides/02-features.md
+---
+
+---
+src: ./slides/03-conclusion.md
+--- 
