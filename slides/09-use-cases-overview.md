@@ -11,7 +11,7 @@ transition: slide-right
 
 ## <span class="montserrat-heading">Transforming how you</span> <span class="illinois-orange">**learn, research & create**</span>
 
-<div class="grid grid-cols-3 gap-8 mt-12 mb-8">
+<div class="grid grid-cols-3 gap-6 mt-10 mb-6">
 
 <div class="feature-card blue">
 
@@ -45,7 +45,7 @@ transition: slide-right
 
 </div>
 
-<div class="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
+<div class="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
 
 <div class="feature-card orange">
 
@@ -69,7 +69,7 @@ transition: slide-right
 
 </div>
 
-<div class="mt-12 text-lg text-center">
+<div class="mt-8 text-lg text-center">
 <span class="call-to-action">Let's explore each use case in detail ↓</span>
 </div>
 
@@ -77,7 +77,7 @@ transition: slide-right
 
 <style>
 .feature-card {
-  @apply p-6 rounded-xl text-center;
+  @apply p-4 rounded-xl text-center;
   @apply bg-gradient-to-br from-gray-100 to-gray-200;
   @apply dark:from-gray-700 dark:to-gray-800;
   @apply transition-all duration-300 hover:scale-105;
@@ -85,7 +85,7 @@ transition: slide-right
 }
 
 .feature-card h3 {
-  @apply text-lg font-semibold mt-3 mb-2;
+  @apply text-base font-semibold mt-2 mb-1;
   @apply text-gray-800 dark:text-gray-100;
 }
 
