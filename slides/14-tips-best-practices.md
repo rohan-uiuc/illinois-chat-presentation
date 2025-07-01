@@ -81,7 +81,7 @@ transition: slide-up
 <!-- Tips & Best Practices Screenshot -->
 <div class="pl-6">
   <div class="h-full flex items-center justify-center">
-    <img src="/images/tips_best_practices_placeholder.png" alt="Tips & Best Practices Interface" class="w-full max-w-lg rounded-lg shadow-lg" />
+    <img src="/images/system_prompt.png" alt="Tips & Best Practices Interface" class="w-full max-w-lg rounded-lg shadow-lg" />
   </div>
 </div>
 

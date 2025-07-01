@@ -85,7 +85,7 @@ transition: slide-up
 <!-- Research & Professional Use Cases Screenshot -->
 <div class="pl-6">
   <div class="h-full flex items-center justify-center">
-    <img src="/images/research_professional_placeholder.png" alt="Research & Professional Use Cases Interface" class="w-full max-w-lg rounded-lg shadow-lg" />
+    <img src="/images/banner_step_002.png" alt="Research & Professional Use Cases Interface" class="w-full max-w-lg rounded-lg shadow-lg" />
   </div>
 </div>
 

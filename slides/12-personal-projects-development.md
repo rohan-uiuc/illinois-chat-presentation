@@ -85,7 +85,7 @@ transition: slide-up
 <!-- Personal Projects & Development Screenshot -->
 <div class="pl-6">
   <div class="h-full flex items-center justify-center">
-    <img src="/images/personal_projects_placeholder.png" alt="Personal Projects & Development Interface" class="w-full max-w-lg rounded-lg shadow-lg" />
+    <img src="/images/banner_step_003.png" alt="Personal Projects & Development Interface" class="w-full max-w-lg rounded-lg shadow-lg" />
   </div>
 </div>
 
