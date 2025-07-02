@@ -9,18 +9,20 @@ transition: fade
 <!-- Theme Toggle Component -->
 <ThemeToggle />
 
-<div class="flex flex-col items-center justify-center h-full">
+<div class="flex flex-col h-full">
   <!-- Illinois Chat Logo Container -->
-  <div class="flex items-center justify-center mb-12">
-    <!-- I Logo -->
-    <img 
-      src="/images/logo_illinois.png" 
-      alt="Illinois Logo" 
-      class="h-24 w-auto mr-4"
-    />
-    <!-- Illinois Chat Text -->
-    <a href="https://chat.illinois.edu" target="_blank" class="montserrat-heading text-6xl md:text-7xl lg:text-8xl font-bold theme-text-primary hover:text-orange-500 transition-colors no-underline cursor-pointer" style="border-bottom: none;">
-      Illinois Chat
+  <div class="flex self-center items-center justify-center mt-12 mb-12">
+    <a href="https://chat.illinois.edu" target="_blank" class="flex items-center hover:scale-105 transition-transform duration-300 no-underline cursor-pointer" style="border-bottom: none; text-decoration: none;">
+      <!-- I Logo -->
+      <img 
+        src="/images/logos/logo_illinois.png" 
+        alt="Illinois Logo" 
+        class="h-24 w-auto mr-4"
+      />
+      <!-- Illinois Chat Text -->
+      <span class="montserrat-heading text-6xl md:text-7xl lg:text-8xl font-bold theme-text-primary hover:text-orange-500 transition-colors duration-300">
+        Illinois Chat
+      </span>
     </a>
   </div>
   
@@ -32,29 +34,43 @@ transition: fade
   </div>
   
   <!-- Presenter Information -->
-  <div class="flex items-center gap-8">
-    <img 
-      src="/images/Rohan Marwaha.jpeg" 
-      alt="Rohan Marwaha" 
-      class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-orange-500 shadow-lg theme-profile-image"
-    />
-    <div class="text-left">
-      <div class="montserrat-heading text-xl md:text-2xl font-semibold theme-text-primary mb-3">
-        Rohan Marwaha
+  <div class="flex justify-between items-center gap-8 w-full hover:cursor-pointer">
+    <a href="https://rohanmarwaha.com" target="_blank" class="flex items-center gap-8 hover:scale-105 transition-transform duration-300 cursor-pointer hover:cursor-pointer group no-underline" style="text-decoration: none; border: none;">
+      <img 
+        src="/images/Rohan Marwaha.jpeg" 
+        alt="Rohan Marwaha" 
+        class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-orange-500 shadow-lg theme-profile-image group-hover:shadow-xl transition-shadow duration-300 hover:cursor-pointer"
+      />
+      <div class="text-left">
+        <div class="montserrat-heading text-xl md:text-2xl font-semibold theme-text-primary mb-3 group-hover:text-orange-500 transition-colors duration-300 hover:cursor-pointer">
+          Rohan Marwaha
+        </div>
+        <div class="montserrat-paragraph theme-text-muted text-base md:text-lg text-left group-hover:theme-text-secondary transition-colors duration-300 hover:cursor-pointer">
+          Center for AI Innovation, NCSA
+        </div>
+        <div class="montserrat-paragraph theme-text-muted text-sm md:text-base opacity-75 text-left group-hover:opacity-90 transition-opacity duration-300 hover:cursor-pointer">
+          University of Illinois at Urbana-Champaign
+        </div>
       </div>
-      <div class="montserrat-paragraph theme-text-muted text-base md:text-lg">
-        Center for AI Innovation, NCSA
-      </div>
-      <div class="montserrat-paragraph theme-text-muted text-sm md:text-base opacity-75">
-        University of Illinois at Urbana-Champaign
-      </div>
-    </div>
+    </a>
+    <a href="https://ncsa.illinois.edu" target="_blank" class="flex items-center hover:scale-105 transition-transform duration-300 cursor-pointer no-underline hover:cursor-pointer" style="text-decoration: none; border: none;">
+      <img 
+        src="/images/logos/ncsa_logo_light_mode.png" 
+        alt="NCSA Logo" 
+        class="h-24 block dark:hidden hover:opacity-80 transition-opacity duration-300 hover:cursor-pointer"
+      />
+      <img 
+        src="/images/logos/ncsa_logo_dark_mode.png" 
+        alt="NCSA Logo" 
+        class="h-24 hidden dark:block hover:opacity-80 transition-opacity duration-300 hover:cursor-pointer"
+      />
+    </a>
   </div>
   
   <!-- Navigation hint -->
   <div 
     @click="$slidev.nav.next" 
-    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 
+    class="absolute bottom-4 left-1/2 transform -translate-x-1/2 
            montserrat-paragraph theme-text-muted text-sm md:text-base 
            hover:text-orange-500 transition-colors cursor-pointer
            flex items-center gap-2"

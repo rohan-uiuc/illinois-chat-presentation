@@ -44,15 +44,15 @@ src: ./slides/04a-upload-content.md
 ---
 
 ---
+src: ./slides/04g-access-control.md
+---
+
+---
 src: ./slides/04b-chat-features.md
 ---
 
 ---
 src: ./slides/04c-analytics-dashboard.md
----
-
----
-src: ./slides/04g-access-control.md
 ---
 
 ---
@@ -92,9 +92,13 @@ src: ./slides/14-tips-best-practices.md
 ---
 
 ---
+src: ./slides/15-acknowledgements.md
+---
+
+---
 src: ./slides/14-qa.md
 ---
 
 ---
-src: ./slides/15-survey.md
+src: ./slides/16-survey.md
 ---

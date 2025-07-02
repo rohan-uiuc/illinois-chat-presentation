@@ -10,9 +10,9 @@ transition: slide-left
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
   
   <!-- Students & Faculty Section -->
-  <div class="text-center p-6 bg-blue-100 dark:bg-blue-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div class="text-center p-6 bg-gradient-to-br from-blue-500/10 via-blue-400/15 to-blue-600/20 dark:from-blue-600/20 dark:via-blue-500/25 dark:to-blue-700/30 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
     <div class="text-5xl mb-4">🎓👨‍🏫</div>
-    <h3 class="montserrat-heading text-xl font-bold text-blue-800 dark:text-blue-100 mb-4">
+    <h3 class="montserrat-heading text-xl font-bold text-blue-700 dark:text-blue-200 mb-4">
       Students & Faculty
     </h3>
     <div class="space-y-3 text-left">
@@ -22,7 +22,7 @@ transition: slide-left
       </div>
       <div class="flex items-start gap-2">
         <span class="text-green-500 mt-1">✓</span>
-        <span class="montserrat-paragraph text-sm">Quiz prep & auto-generated summaries</span>
+        <span class="montserrat-paragraph text-sm">Quiz prep & course summaries</span>
       </div>
       <div class="flex items-start gap-2">
         <span class="text-green-500 mt-1">✓</span>
@@ -36,9 +36,9 @@ transition: slide-left
   </div>
 
   <!-- Researchers Section -->
-  <div class="text-center p-10 bg-green-100 dark:bg-green-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div class="text-center p-10 bg-gradient-to-br from-green-500/10 via-green-400/15 to-green-600/20 dark:from-green-600/20 dark:via-green-500/25 dark:to-green-700/30 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
     <div class="text-5xl mb-4">🔬</div>
-    <h3 class="montserrat-heading text-xl font-bold text-green-800 dark:text-green-100 mb-8">
+    <h3 class="montserrat-heading text-xl font-bold text-green-700 dark:text-green-200 mb-8">
       Researchers
     </h3>
     <div class="space-y-3 text-left">
@@ -62,9 +62,9 @@ transition: slide-left
   </div>
 
   <!-- Staff & Admins Section -->
-  <div class="text-center p-10 bg-purple-100 dark:bg-purple-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+  <div class="text-center p-10 bg-gradient-to-br from-purple-500/10 via-purple-400/15 to-purple-600/20 dark:from-purple-600/20 dark:via-purple-500/25 dark:to-purple-700/30 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
     <div class="text-5xl mb-4">👥</div>
-    <h3 class="montserrat-heading text-xl font-bold text-purple-800 dark:text-purple-100 mb-8">
+    <h3 class="montserrat-heading text-xl font-bold text-purple-700 dark:text-purple-200 mb-8">
       Staff & Admins
     </h3>
     <div class="space-y-3 text-left">

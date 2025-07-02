@@ -10,9 +10,13 @@ transition: slide-left
   <div class="w-2.25/10 flex flex-col justify-center items-center p-8 bg-white/5">
     <div class="text-center">
       <div class="montserrat-paragraph text-lg text-gray-600 dark:text-gray-300">
-        Please fill out the survey to help us improve the future presentations
+        Time for
       </div>
-      <h2 class="slide-title text-3xl font-bold mt-4">Thank You!</h2>
+      <h2 class="slide-title text-2xl font-bold mb-8">Q&A!</h2>
+      <div class="montserrat-paragraph text-lg text-gray-600 dark:text-gray-300 mb-4">
+        Please fill out the survey to help us improve future presentations
+      </div>
+      <h2 class="slide-title text-3xl font-bold">Thank You!</h2>
     </div>
   </div>
   

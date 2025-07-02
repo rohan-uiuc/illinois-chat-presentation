@@ -7,38 +7,49 @@ transition: slide-left
 
 # <span class="slide-title">Why Illinois Chat?</span>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
   
   <!-- Problem 1: Fragmented Materials -->
-  <div class="text-center p-6 bg-red-100 dark:bg-red-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-    <div class="text-4xl mb-4">📚</div>
-    <h3 class="montserrat-heading text-lg font-bold text-red-800 dark:text-red-100 mb-2">
+  <div class="text-center p-4 bg-gradient-to-br from-red-500/10 via-red-400/15 to-red-600/20 dark:from-red-600/20 dark:via-red-500/25 dark:to-red-700/30 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="text-3xl mb-3">📚</div>
+    <h3 class="montserrat-heading text-base font-bold text-red-700 dark:text-red-200 mb-2">
       Fragmented Course Materials
     </h3>
-    <p class="montserrat-paragraph text-sm text-red-700 dark:text-red-200">
+    <p class="montserrat-paragraph text-xs text-red-600 dark:text-red-300">
       Canvas, PDFs, recordings scattered across platforms
     </p>
   </div>
 
   <!-- Problem 2: Time-Consuming Searches -->
-  <div class="text-center p-6 bg-yellow-100 dark:bg-yellow-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-    <div class="text-4xl mb-4">⏰</div>
-    <h3 class="montserrat-heading text-lg font-bold text-yellow-800 dark:text-yellow-100 mb-2">
+  <div class="text-center p-4 bg-gradient-to-br from-yellow-500/10 via-yellow-400/15 to-yellow-600/20 dark:from-yellow-600/20 dark:via-yellow-500/25 dark:to-yellow-700/30 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="text-3xl mb-3">⏰</div>
+    <h3 class="montserrat-heading text-base font-bold text-yellow-700 dark:text-yellow-200 mb-2">
       Time-Consuming Searches
     </h3>
-    <p class="montserrat-paragraph text-sm text-yellow-700 dark:text-yellow-200">
+    <p class="montserrat-paragraph text-xs text-yellow-600 dark:text-yellow-300">
       Hours spent hunting for specific information
     </p>
   </div>
 
   <!-- Solution: Single AI Assistant -->
-  <div class="text-center p-6 bg-green-100 dark:bg-green-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-    <div class="text-4xl mb-4">🤖</div>
-    <h3 class="montserrat-heading text-lg font-bold text-green-800 dark:text-green-100 mb-2">
+  <div class="text-center p-4 bg-gradient-to-br from-green-500/10 via-green-400/15 to-green-600/20 dark:from-green-600/20 dark:via-green-500/25 dark:to-green-700/30 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="text-3xl mb-3">🤖</div>
+    <h3 class="montserrat-heading text-base font-bold text-green-700 dark:text-green-200 mb-2">
       Single AI Assistant
     </h3>
-    <p class="montserrat-paragraph text-sm text-green-700 dark:text-green-200">
+    <p class="montserrat-paragraph text-xs text-green-600 dark:text-green-300">
       One platform to chat with all your materials
+    </p>
+  </div>
+
+  <!-- NEW: Grounded Responses -->
+  <div class="text-center p-4 bg-gradient-to-br from-blue-500/10 via-blue-400/15 to-blue-600/20 dark:from-blue-600/20 dark:via-blue-500/25 dark:to-blue-700/30 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="text-3xl mb-3">✅</div>
+    <h3 class="montserrat-heading text-base font-bold text-blue-700 dark:text-blue-200 mb-2">
+      Grounded Responses
+    </h3>
+    <p class="montserrat-paragraph text-xs text-blue-600 dark:text-blue-300">
+      Unlike ChatGPT, accurate answers from your content
     </p>
   </div>
 
@@ -51,7 +62,7 @@ transition: slide-left
       Illinois Chat is the future of education at UIUC
     </h2>
     <p class="montserrat-paragraph text-lg md:text-xl text-illinois-orange leading-relaxed">
-      Launching as an <strong>official campus service</strong> this fall - your AI-powered teaching & learning assistant
+      Your AI-powered teaching & learning assistant
     </p>
   </div>
 </div>
@@ -63,5 +74,5 @@ Our team is working non-stop to launch this AI powerhouse as an official campus 
 Key problems from outline:
 - Fragmented course materials (Canvas, PDFs, recordings)
 - Time-consuming searches across platforms  
-- Need for single, AI-powered assistant
+- Solution: Grounded responses from actual course materials vs. ChatGPT hallucinations
 --> 

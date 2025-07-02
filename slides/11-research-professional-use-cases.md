@@ -5,76 +5,72 @@ transition: slide-up
 
 <ThemeToggle />
 
-# <span class="slide-title">🔬 Research & Professional Use Cases</span>
+# <span class="slide-title">🔬 Research & Professional</span>
 
-<div class="pr-6">
-  <h4 class="montserrat-paragraph text-base font-bold text-green-800 dark:text-green-100 mb-4">
-    Advancing Research & Administration
+<div class="pr-4">
+  <h4 class="montserrat-paragraph text-sm font-bold text-green-700 dark:text-green-200 mb-3">
+    Advancing Research Across Domains
   </h4>
   
-  <!-- Research Applications -->
-  <div class="mb-4">
-    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
-      <span class="text-blue-500">🧪</span> Research Applications
+  <!-- Domain-Specific Research Applications -->
+  <div class="mb-3">
+    <h4 class="montserrat-paragraph text-xs font-semibold text-blue-700 dark:text-blue-200 mb-1 flex items-center gap-1">
+      <span class="text-blue-500">🔬</span> Research Domain Applications
     </h4>
-    <ul class="space-y-2 text-sm">
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Literature review and citation analysis</span>
+    <ul class="space-y-1 text-xs">
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300"><strong>Agronomy & Farming:</strong> Crop analysis, soil data, agricultural AI</span>
       </li>
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Data analysis and visualization assistance</span>
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300"><strong>Biomedical & Medical:</strong> Clinical data analysis, research protocols</span>
       </li>
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Grant proposal writing and formatting</span>
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300"><strong>Legal Research:</strong> Case law analysis, regulatory compliance</span>
       </li>
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Research methodology guidance</span>
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300"><strong>Engineering:</strong> Technical documentation, design optimization</span>
       </li>
     </ul>
   </div>
 
-  <!-- Administrative Support -->
-  <div class="mb-4">
-    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
-      <span class="text-purple-500">📊</span> Administrative Support
+  <!-- Research Methodology Support -->
+  <div class="mb-3">
+    <h4 class="montserrat-paragraph text-xs font-semibold text-purple-700 dark:text-purple-200 mb-1 flex items-center gap-1">
+      <span class="text-purple-500">📊</span> Research Support Tools
     </h4>
-    <ul class="space-y-2 text-sm">
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Student services chatbot for common inquiries</span>
+    <ul class="space-y-1 text-xs">
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300">Literature review and citation analysis</span>
       </li>
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Enrollment and registration assistance</span>
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300">Grant proposal writing and formatting</span>
       </li>
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Policy document navigation and Q&A</span>
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300">Data visualization and statistical guidance</span>
       </li>
     </ul>
   </div>
 
   <!-- Professional Development -->
   <div>
-    <h4 class="montserrat-paragraph text-sm font-semibold text-gray-800 dark:text-gray-200 mb-1 flex items-center gap-1">
+    <h4 class="montserrat-paragraph text-xs font-semibold text-orange-700 dark:text-orange-200 mb-1 flex items-center gap-1">
       <span class="text-orange-500">🎯</span> Professional Development
     </h4>
-    <ul class="space-y-2 text-sm">
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Career counseling and job market insights</span>
+    <ul class="space-y-1 text-xs">
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300">Administrative policy navigation and compliance</span>
       </li>
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Professional skill assessment and training</span>
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-        <span class="montserrat-paragraph">Academic conference and networking support</span>
+      <li class="flex items-start gap-2">
+        <span class="w-1 h-1 bg-green-500 rounded-full flex-shrink-0 mt-2"></span>
+        <span class="montserrat-paragraph text-gray-700 dark:text-gray-300">Career counseling and academic networking</span>
       </li>
     </ul>
   </div>
@@ -83,15 +79,16 @@ transition: slide-up
 ::right::
 
 <!-- Research & Professional Use Cases Screenshot -->
-<div class="pl-6">
-  <div class="h-full flex items-center justify-center">
-    <img src="/images/banner_step_002.png" alt="Research & Professional Use Cases Interface" class="w-full max-w-lg rounded-lg shadow-lg" />
+<a href="https://uiuc.chat/cropwizard-1.5" target="_blank" class="h-full w-full flex flex-col space-y-2 justify-center mt-4" style="border: none; text-decoration: none;">
+  <div class="w-full flex flex-col items-start space-y-2">
+    <img src="/images/logos/cropwizard_logo.png" alt="CropWizard Logo" class="h-8">
+    <img src="/images/pest_detection.png" alt="Research & Professional Use Cases Interface" class="w-full rounded-xl shadow-lg">
   </div>
-</div>
+</a>
 
 <!--
 Research & Professional use cases slide:
-- Research applications for literature review, data analysis, and grant writing
-- Administrative support for student services and policy navigation
-- Professional development for career guidance and skill assessment
+- Domain-specific research applications across agronomy, biomedical, legal, and engineering fields
+- Research methodology support for literature review, grants, and data analysis
+- Professional development for policy navigation and academic networking
 -->
