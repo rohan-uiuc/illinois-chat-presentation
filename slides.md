@@ -68,15 +68,27 @@ src: ./slides/04f-tool-page.md
 ---
 
 ---
-src: ./slides/10-collaborative-features.md
+src: ./slides/09-use-cases-overview.md
 ---
 
 ---
-src: ./slides/11-integration-highlights.md
+src: ./slides/10-classroom-use-cases.md
 ---
 
 ---
-src: ./slides/12-getting-started.md
+src: ./slides/11-research-professional-use-cases.md
+---
+
+---
+src: ./slides/12-personal-projects-development.md
+---
+
+---
+src: ./slides/13-platform-roadmap.md
+---
+
+---
+src: ./slides/14-tips-best-practices.md
 ---
 
 ---
