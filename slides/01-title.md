@@ -27,7 +27,7 @@ transition: fade
   <!-- Subtitle -->
   <div class="montserrat-paragraph text-xl md:text-2xl theme-text-secondary mb-16 max-w-4xl leading-relaxed text-center">
     Launching as an official campus service at the
-    <br />University of Illinois at Urbana-Champaign
+    <br />University of Illinois
     <br />this fall
   </div>
   
