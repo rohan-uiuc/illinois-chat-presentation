@@ -26,7 +26,7 @@ transition: fade
   
   <!-- Subtitle -->
   <div class="montserrat-paragraph text-xl md:text-2xl theme-text-secondary mb-16 max-w-4xl leading-relaxed text-center">
-    Launching as an official campus service at the university… this fall
+    Launching as an official campus service at the University of Illinois… this fall
   </div>
   
   <!-- Presenter Information -->
