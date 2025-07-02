@@ -25,20 +25,19 @@ transition: fade
   </div>
   
   <!-- Subtitle -->
-  <div class="montserrat-paragraph text-xl md:text-2xl theme-text-secondary mb-16 max-w-4xl leading-relaxed">
-    Official GenAI offering 
-    <br />at the University of Illinois
+  <div class="montserrat-paragraph text-xl md:text-2xl theme-text-secondary mb-16 max-w-4xl leading-relaxed text-center">
+    Launching as an official campus service at the university… this fall
   </div>
   
   <!-- Presenter Information -->
-  <div class="flex items-center gap-6">
+  <div class="flex items-center gap-8">
     <img 
       src="/images/Rohan Marwaha.jpeg" 
       alt="Rohan Marwaha" 
-      class="w-16 h-16 md:w-20 md:h-20 rounded-full border-4 border-orange-500 shadow-lg theme-profile-image"
+      class="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-orange-500 shadow-lg theme-profile-image"
     />
     <div class="text-left">
-      <div class="montserrat-heading text-xl md:text-2xl font-semibold theme-text-primary">
+      <div class="montserrat-heading text-xl md:text-2xl font-semibold theme-text-primary mb-3">
         Rohan Marwaha
       </div>
       <div class="montserrat-paragraph theme-text-muted text-base md:text-lg">
