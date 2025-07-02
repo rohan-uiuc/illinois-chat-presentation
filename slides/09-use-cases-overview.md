@@ -15,7 +15,7 @@ transition: slide-up
 
 <div class="feature-card blue">
 
-🎓
+<span class="feature-icon">🎓</span>
 
 ### Classroom Learning
 
@@ -25,7 +25,7 @@ transition: slide-up
 
 <div class="feature-card green">
 
-🔬
+<span class="feature-icon">🔬</span>
 
 ### Research & Professional
 
@@ -35,7 +35,7 @@ transition: slide-up
 
 <div class="feature-card purple">
 
-🚀
+<span class="feature-icon">🚀</span>
 
 ### Personal Projects and Development
 
@@ -57,6 +57,10 @@ transition: slide-up
   @apply bg-gradient-to-br;
   @apply transition-all duration-300 hover:scale-105;
   @apply shadow-md hover:shadow-lg;
+}
+
+.feature-icon {
+  @apply text-4xl mb-2 block;
 }
 
 .feature-card h3 {

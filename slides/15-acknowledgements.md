@@ -46,8 +46,8 @@ transition: slide-up
 
 <!-- SIIP Card -->
 <div class="card-wrapper">
-  <a href="https://ae3.grainger.illinois.edu/holding/strategic-instructional-initiatives-program-siip" target="_blank" rel="noopener noreferrer" class="acknowledgement-card purple">
-    <h4 class="font-semibold text-purple-800 text-center leading-tight" style="font-size: 12px;">
+  <a href="https://ae3.grainger.illinois.edu/holding/strategic-instructional-initiatives-program-siip" target="_blank" rel="noopener noreferrer" class="acknowledgement-card">
+    <h4 class="font-semibold text-gray-800 dark:text-gray-700 text-center leading-tight" style="font-size: 12px;">
       Strategic Instructional Innovations Program (SIIP)
     </h4>
   </a>
@@ -111,14 +111,7 @@ transition: slide-up
   outline: none !important;
 }
 
-.acknowledgement-card.purple {
-  @apply from-purple-100 to-purple-200;
-  @apply dark:from-purple-50 dark:to-purple-100;
-}
 
-.acknowledgement-card.purple h4 {
-  @apply text-purple-800;
-}
 </style>
 
 <!--
